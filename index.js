@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 4001;
+const port = 6000;
 const cors = require('cors');
 
 // Middleware para parsear el cuerpo de las solicitudes POST

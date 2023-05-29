@@ -13,7 +13,13 @@ app.post('/plantilla', (req, res) => {
   // Acceder a los datos enviados en la solicitud POST
   const { body } = req;
   console.log('Datos recibidos:', body);
-  
+  console.log(body.Form);
+  console.log(body.Temporal);
+  console.log(body.Cliente);
+  console.log(body.Empleados);
+  console.log(body.Concepto);
+  console.log(body.Fecha);
+
   // Realizar operaciones con los datos recibidos
   // const process = spawn('python',["./test.py"]);
 

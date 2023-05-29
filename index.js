@@ -15,14 +15,14 @@ app.post('/plantilla', (req, res) => {
   console.log('Datos recibidos:', body);
   
   // Realizar operaciones con los datos recibidos
-  const process = spawn('python',["./test.py"]);
+  // const process = spawn('python',["./test.py"]);
 
-  process.stderr.on("data",(data)=>{
-    console.error('stderr:',data.toString());
-  })
-  process.stdout.on('data', (data) => {
-    console.log(data.toString());
-  });
+  // process.stderr.on("data",(data)=>{
+  //   console.error('stderr:',data.toString());
+  // })
+  // process.stdout.on('data', (data) => {
+  //   console.log(data.toString());
+  // });
 
   // Enviar una respuesta al cliente
   res.status(200).json({ message: 'Solicitud POST recibida correctamente' });

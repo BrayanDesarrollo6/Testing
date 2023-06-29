@@ -36,6 +36,7 @@ app.post('/plantilla', (req, res) => {
 
 // Manejador de la solicitud GET a la raíz
 app.get('/', (req, res) => {
+  console.log("Peticion obteniga get")
   res.send('¡Bienvenido! Esta es la página principal.');
 });
 
